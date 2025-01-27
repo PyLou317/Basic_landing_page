@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-bar {
@@ -15,7 +16,8 @@ body {
 }
 
 .header-logo {
-    justify-content: flex-start;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .header-links ul{
@@ -29,6 +31,12 @@ body {
     margin-left: 20px;
 }
 
-.header-links li {
-    margin-left: 20px;
+.header-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header-links a:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
