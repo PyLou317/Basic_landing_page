@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LP's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="nav-bar" aria-label="Main Navigation">
       <div class="header-logo">Header Logo</div>
       <div class="header-links">
         <ul>
-          <li><a href="#">My Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">My Projects</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
         </ul>
       </div>
     </nav>
 
-    <header class="hero-banner">
+    <header id="home" class="hero-banner">
       <div class="hb-left">
         <div class="website-title">Welcome to LP's Digital Playground</div>
         <div class="title-subtext">
@@ -34,7 +38,7 @@
       </div>
     </header>
 
-    <section class="project-banner">
+    <section id="projects" class="project-banner">
       <div class="pb-title"><h2>My Projects</h2></div>
       <div class="project-card">
         <div class="img"></div>
@@ -46,6 +50,8 @@
         <div class="img"></div>
         <div class="project-info">
           This is some subtext about each project under a picture.
+          hdhdhdhdhoah;bfoihi aifh aihfi oqiohfas ;ohioshaidhfoia ifhio;ahf
+          ia;hodfihasoif.
         </div>
       </div>
       <div class="project-card">
@@ -62,18 +68,25 @@
       </div>
     </section>
 
-    <section class="quote-banner">
-      <blockquote>
-        <p class="quote">
-          repeat or copy out (a group of words from a text or speech), typically
-          with an indication that one is not the original author or speaker.
-        </p>
-        <footer class="quote-author">— <cite>verb</cite></footer>
-      </blockquote>
+    <section id="about-me" class="about-banner">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="your-profile-image.jpg" alt="Your Profile Picture" />
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Write a compelling and concise description about yourself here.
+            Highlight your skills, experience, and what you're passionate about.
+            You can also mention your goals and aspirations. Make it engaging
+            and personal to connect with visitors.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section class="contact-banner">
-      <div class="contact-title"><h2>Contact Us</h2></div>
+    <section id="contact-me" class="contact-banner">
+      <div class="contact-title"><h2>Reach Out to Me!</h2></div>
       <form action="submit_form.php" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
@@ -81,8 +94,8 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required />
 
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required />
+        <!-- <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required /> -->
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
