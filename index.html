@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LP's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar" aria-label="Main Navigation">
+      <div class="header-logo">Header Logo</div>
+      <div class="header-links">
+        <ul>
+          <li><a href="#">header link one</a></li>
+          <li><a href="#">header link two</a></li>
+          <li><a href="#">header link three</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero-banner">
+      <div class="hb-left">
+        <div class="website-title">Welcome to LP's Digital Playground</div>
+        <div class="title-subtext">
+          This is my first html and css only landing page, please find my
+          projects and links to repo's below, enjoy!
+          <button>LinkedIn</button>
+        </div>
+      </div>
+      <div class="hb-right">
+        <p>image placeholder</p>
+      </div>
+    </header>
+
+    <section class="project-banner">
+      <div class="pb-title"><h2>My Projects</h2></div>
+      <div class="project-card">
+        <div class="img"></div>
+        <div class="project-info">
+          This is some subtext about each project under a picture.
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="img"></div>
+        <div class="project-info">
+          This is some subtext about each project under a picture.
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="img"></div>
+        <div class="project-info">
+          This is some subtext about each project under a picture.
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="img"></div>
+        <div class="project-info">
+          This is some subtext about each project under a picture.
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-banner">
+      <blockquote>
+        <p class="quote">
+          repeat or copy out (a group of words from a text or speech), typically
+          with an indication that one is not the original author or speaker.
+        </p>
+        <footer class="quote-author">— <cite>verb</cite></footer>
+      </blockquote>
+    </section>
+
+    <section class="contact-banner">
+      <div class="contact-title"><h2>Contact Us</h2></div>
+      <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+
+    <footer class="footer" aria-label="Footer">
+      <p>Copyright © Lucas Patriquin Designs 2025</p>
+    </footer>
+  </body>
+</html>
