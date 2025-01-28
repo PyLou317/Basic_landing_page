@@ -8,7 +8,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh; /* Ensure footer sticks to bottom */
-    padding-top: 45px; /* Add padding for fixed navbar */
+    padding-top: 48px; /* Add padding for fixed navbar */
 }
 
 .nav-bar {
@@ -64,7 +64,7 @@ body {
 
 .hb-left {
     flex: 1;
-    margin-left: 250px;
+    margin-left: 10%;
 }
 
 .hb-right {
@@ -72,7 +72,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 250px; /* Remove if not needed */
+    margin-right: 10%; /* Remove if not needed */
 }
 
 .hb-right img {
@@ -272,6 +272,28 @@ body {
 
 /* Media query for smaller screens (smartphones) */
 @media (max-width: 768px) { /* Adjust 768px as needed */
+    body {
+        padding-top: 140px;
+    }
+    .nav-bar {
+        flex-direction: column; /* Stack logo and links vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px; /* Reduce padding */
+        height: auto; /* Let height adjust to content */
+    }
+
+    .header-logo {
+        margin-bottom: 10px; /* Add some space below logo */
+    }
+
+    .header-links ul {
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-start; /* Align links to the left */
+    }
+
+    .header-links li {
+        margin-bottom: 5px; /* Add space between links */
+    }
 
     .hero-banner {
         flex-direction: column; /* Stack elements vertically */
